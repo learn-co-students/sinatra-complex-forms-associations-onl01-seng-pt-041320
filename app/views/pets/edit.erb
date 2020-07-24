@@ -12,7 +12,7 @@
  
     <h3>Existing Owners</h3>
     <% @owners.each do |o| %>
-      <input type="checkbox" name="pet[owner_id]" id="<%= o.id %>" value="<%= o.id %>" 
+      <input type="radio" name="pet[owner_id]" id="<%= o.id %>" value="<%= o.id %>" 
       <%="checked" if @pet.owner == o %>><%= o.name %>
     <% end %>
     <br>
